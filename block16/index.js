@@ -46,24 +46,30 @@ const rocky = {
   coupon: true,
 };
 
+const array = [timmy, sarah, rocky];
+
+const customer = array[1];
+
+// console.log(array[0]);
+
 function totalCost(obj) {
   return obj.pricePerRefill * obj.refills;
 }
 
-const totalCostWoDisc = totalCost(sarah);
+const totalCostWoDisc = totalCost(customer);
 
 function totalCostSub(obj) {
   return totalCostWoDisc * 0.25;
 }
 
-const subDisc = totalCostSub(sarah);
+const subDisc = totalCostSub(customer);
 
 // const subscription = [true];
 // const coupon = [true];
 
-if (sarah.subscription === true) {
+if (customer.subscription === true) {
   console.log(totalCostWoDisc - subDisc);
-} else if (sarah.coupon === true) {
+} else if (customer.coupon === true) {
   console.log(totalCostWoDisc - 10);
 } else {
   console.log(totalCostWoDisc);
