@@ -68,11 +68,11 @@ const subDisc = totalCostSub(customer);
 // const coupon = [true];
 
 if (customer.subscription === true) {
-  console.log(totalCostWoDisc - subDisc);
+  console.log("Your grand total is " + (totalCostWoDisc - subDisc));
 } else if (customer.coupon === true) {
-  console.log(totalCostWoDisc - 10);
+  console.log("Your grand total is " + (totalCostWoDisc - 10));
 } else {
-  console.log(totalCostWoDisc);
+  console.log("Your grand total is " + totalCostWoDisc);
 }
 
 // function totalCostWithDiscounts(obj) {
