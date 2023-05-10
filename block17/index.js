@@ -1,15 +1,15 @@
 const coffeeMenu = require("./coffee_data");
 
-// console.log(coffeeMenu);
-
-// 2. Print an array of all the drinks on the menu.
-// 3. Print an array of drinks that cost 5 and under.
-// 4. Print an array of drinks that are priced at an even number.
+// 1. Clean the coffee_data.js file. DONE
+// 2. Print an array of all the drinks on the menu. DONE
+// 3. Print an array of drinks that cost 5 and under. DONE
+// 4. Print an array of drinks that are priced at an even number. DONE
 // 5. Print the total if you were to order one of every drink.
-// 6. Print an array with all the drinks that are seasonal.
-// 7. Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans".
+// 6. Print an array with all the drinks that are seasonal. DONE
+// 7. Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans". DONE
 
-// drinks array
+// DRINKS ARRAY
+// 2. Print an array of all the drinks on the menu. DONE
 
 // const newArr = [];
 // coffeeMenu.forEach((element) => {
@@ -20,41 +20,69 @@ const coffeeMenu = require("./coffee_data");
 // //coffeeMenu.map(drinksArr); (ALTERNATE WAY)
 // console.log(coffeeMenu.map((elem) => elem.name));
 
-// // price under 5 array
+// PRICE UNDER 5 ARRRAY
+// 3. Print an array of drinks that cost 5 and under. DONE
 
 // const newArr2 = [];
 // coffeeMenu.forEach((element) => {
-//   if (element.name <= 5);
-//   console.log(element.name);
+//   if (element.price <= 5) {
+//     newArr2.push(element.name);
+//   }
 // });
 // console.log(newArr2);
 
-// // even number array
-// function priceEven(drink) {
-//   return drink.price % 2 === 0;
+// EVEN NUMBER ARRAY
+// 4. Print an array of drinks that are priced at an even number. DONE
+
+// const newArr3 = [];
+// coffeeMenu.forEach((element) => {
+//   if (element.price % 2 === 0) {
+//     newArr3.push(element.name);
+//   }
+// });
+// console.log(newArr3);
+
+// (MY FIRST TRY)
+// const evensArr = coffeeMenu.map((element) => {
+//   return element.price % 2 === 0;
+// });
+
+// console.log(evensArr);
+
+// ONE OF EVERY DRINK TOTAL
+// 5. Print the total if you were to order one of every drink.
+
+const initialValue = 0;
+const sumWithInitial = coffeeMenu[element.price].reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+
+console.log(sumWithInitial);
+
+// Expected output: 10
+// for (let i = 0; i < coffeeMenu.length; i++) {
+//   console.log(element.price);
 // }
 
-const evensArr = coffeeMenu.map((element) => {
-  return element.price % 2 === 0;
-});
+// SEASONAL DRINKS ARRAY
+// 6. Print an array with all the drinks that are seasonal. DONE
 
-console.log(element.name);
+// const newArr5 = [];
+// coffeeMenu.forEach((element) => {
+//   if (element.seasonal === true) {
+//     newArr5.push(element.name);
+//   }
+// });
+// console.log(newArr5);
 
-// // One of every drink total array
+// PRINT SEASONAL DRINKS
+// 7. Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans".
 
-// // Seasonal drinks array
-// function seasonalDrinks(drinks) {
-//     const seas {
-
-//     } if(drink.seasonal === true) {
-
-//     } else {
-
-//     }
-//     return drink.seasonal;
-// }
-
-// // Print seasonal drinks
-// function printSeasonal(drinks) {
-//     const
-// }
+// const newArr6 = [];
+// coffeeMenu.forEach((element) => {
+//   if (element.seasonal === true) {
+//     newArr6.push(element.name + " with imported beans");
+//   }
+// });
+// console.log(newArr6);
