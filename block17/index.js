@@ -52,18 +52,11 @@ const coffeeMenu = require("./coffee_data");
 // ONE OF EVERY DRINK TOTAL
 // 5. Print the total if you were to order one of every drink.
 
-const initialValue = 0;
-const sumWithInitial = coffeeMenu[element.price].reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
-  initialValue
-);
+// const sum = coffeeMenu.reduce((accumulator, object) => {
+//   return accumulator + object.price;
+// }, 0);
 
-console.log(sumWithInitial);
-
-// Expected output: 10
-// for (let i = 0; i < coffeeMenu.length; i++) {
-//   console.log(element.price);
-// }
+// console.log(sum);
 
 // SEASONAL DRINKS ARRAY
 // 6. Print an array with all the drinks that are seasonal. DONE
@@ -80,9 +73,9 @@ console.log(sumWithInitial);
 // 7. Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans".
 
 // const newArr6 = [];
-// coffeeMenu.forEach((element) => {
-//   if (element.seasonal === true) {
-//     newArr6.push(element.name + " with imported beans");
-//   }
-// });
+coffeeMenu.forEach((element) => {
+  if (element.seasonal === true) {
+    console.log(element.name + " with imported beans");
+  }
+});
 // console.log(newArr6);
