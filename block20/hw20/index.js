@@ -11,7 +11,7 @@ const users = [
 
 function main() {
   name = "FREELANCERS";
-  const root = document.getElementById("root");
+  const root = (document.getElementById("root").style.color = "green");
   const h1 = document.createElement("h1");
   h1.innerText = name;
   root.appendChild(h1);
