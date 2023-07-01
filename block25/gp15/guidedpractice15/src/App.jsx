@@ -15,12 +15,27 @@ function Button(props) {
   return (
     <button
       onClick={() => {
-        props.setCount(props.count);
+        props.setCount(props.count + 1);
       }}
     >
       {props.count}
     </button>
   );
 }
+
+//--- object deconstruction w props ---
+//
+// function Button({count, setCount}) {
+//
+//   return (
+//     <button
+//       onClick={() => {
+//         setCount(count)
+//       }}
+//     >
+//       {count}
+//     </button>
+//   );
+// }
 
 export default App;
