@@ -1,4 +1,4 @@
-export default function ContactRow({ setSelectedContactId, contact }) {
+function ContactRow({ setSelectedContactId, contact }) {
   return (
     <tr
       onClick={() => {
@@ -11,3 +11,5 @@ export default function ContactRow({ setSelectedContactId, contact }) {
     </tr>
   );
 }
+
+export default ContactRow;
