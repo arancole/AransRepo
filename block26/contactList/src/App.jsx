@@ -3,13 +3,10 @@ import ContactList from "./components/ContactList";
 import "./App.css";
 import SelectedContact from "./components/SelectedContact";
 
-function App() {
-  const [selectedContactId, setSelectedContactId] = useState(null);
-
+export default function App() {
   return (
     <>
-      {selectedContactId ? <div>Selected Contact View</div> : <ContactList />}
+      <ContactList />
     </>
   );
 }
-export default App;
