@@ -1,0 +1,60 @@
+#all-players-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+
+img {
+  max-width: 200px;
+  height: auto;
+}
+
+.details-button {
+  position: relative;
+  margin-bottom: 5px;
+  top: 20px;
+  right: 205px;
+  padding: 5px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.delete-button {
+  position: relative;
+  margin-bottom: 5px;
+  top: 20px;
+  right: 205px;
+  padding: 5px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+body {
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+  background-color: rgb(80, 153, 255);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(57, 245, 198);
+}
+
+button[type="submit"] {
+  padding: 5px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
